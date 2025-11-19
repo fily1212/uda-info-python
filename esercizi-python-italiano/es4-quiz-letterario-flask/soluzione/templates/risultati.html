@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risultati Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-box">
+            <h1>🎉 Quiz Completato!</h1>
+
+            <div class="score-box">
+                <div class="score-circle">
+                    <h2 class="score">{{ punteggio }}/{{ totale }}</h2>
+                    <p class="percentage">{{ "%.0f"|format(percentuale) }}%</p>
+                </div>
+
+                <p class="message">{{ messaggio }}</p>
+            </div>
+
+            <div class="review">
+                <h3>📝 Riepilogo Risposte</h3>
+
+                {% for risposta in risposte %}
+                <div class="answer-review {% if risposta.corretta %}correct{% else %}incorrect{% endif %}">
+                    <h4>{{ loop.index }}. {{ risposta.domanda }}</h4>
+
+                    <p class="user-answer">
+                        {% if risposta.corretta %}
+                            ✅ La tua risposta: <strong>{{ risposta.risposta_utente }}</strong>
+                        {% else %}
+                            ❌ La tua risposta: <strong>{{ risposta.risposta_utente }}</strong>
+                        {% endif %}
+                    </p>
+
+                    {% if not risposta.corretta %}
+                    <p class="correct-answer">
+                        ✅ Risposta corretta: <strong>{{ risposta.risposta_corretta }}</strong>
+                    </p>
+                    {% endif %}
+
+                    {% if risposta.spiegazione %}
+                    <p class="explanation">
+                        💡 {{ risposta.spiegazione }}
+                    </p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="actions">
+                <a href="{{ url_for('inizia') }}" class="btn btn-primary">
+                    🔄 Riprova
+                </a>
+                <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                    🏠 Torna alla Home
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
