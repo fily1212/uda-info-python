@@ -73,11 +73,14 @@ Gli studenti progetteranno e implementeranno un'**avventura testuale completa** 
 **Obiettivo:** Familiarizzare con il motore fornito.
 
 **Attività:**
-- Giocare all'avventura d'esempio "Il Mistero della Villa Abbandonata"
-- Analizzare il codice sorgente dell'esempio
+- Giocare alle avventure d'esempio:
+  - "Il Mistero della Villa Abbandonata" (giallo/investigativo)
+  - "Le Idi di Marzo" (storico - Roma antica con finali multipli)
+- Analizzare il codice sorgente degli esempi
 - Comprendere come funziona il parser
+- Sperimentare con i comandi in linguaggio naturale
 
-**Tempo:** 2 ore
+**Tempo:** 3-4 ore
 
 ---
 
@@ -410,13 +413,38 @@ game.start()
 
 ### File Forniti
 - `text_adventure_engine.py` - Il motore completo
-- `esempio_villa_misteriosa.py` - Avventura completa d'esempio
+- `esempio_villa_misteriosa.py` - **Avventura 1: Il Mistero della Villa Abbandonata** (Giallo/Investigativo)
+- `esempio_idi_di_marzo.py` - **Avventura 2: Le Idi di Marzo** (Storico - Roma Antica, 44 a.C.)
 - `esempio_es1_mappa.py` - Esempio esercizio 1
 - `esempio_es2_descrizioni.py` - Esempio esercizio 2
 - `esempio_es3_oggetti.py` - Esempio esercizio 3
 - `esempio_es4_puzzle.py` - Esempio esercizio 4
 - `esempio_es5_npc.py` - Esempio esercizio 5
-- `template_progetto.py` - Template per progetto finale
+
+### Avventure Complete d'Esempio
+
+#### 🏚️ **Il Mistero della Villa Abbandonata**
+- **File:** `esempio_villa_misteriosa.py`
+- **Genere:** Giallo/Investigativo
+- **Ambientazione:** Villa vittoriana abbandonata, epoca contemporanea
+- **Durata:** 20-30 minuti
+- **Difficoltà:** Media
+- **Trama:** Detective chiamato a investigare la scomparsa del Professor Blackwood. 12 stanze da esplorare, puzzle a catena, laboratorio segreto, colpo di scena finale.
+- **Didattica:** Perfetto per mostrare struttura investigativa, raccolta indizi, atmosfera gotica/noir.
+
+#### 🏛️ **Le Idi di Marzo - Un Complotto a Roma**
+- **File:** `esempio_idi_di_marzo.py`
+- **Genere:** Storico/Thriller Politico
+- **Ambientazione:** Antica Roma, 14-15 marzo 44 a.C.
+- **Durata:** 25-35 minuti
+- **Difficoltà:** Media-Alta
+- **Trama:** Sei Marcus Verus, scriba che scopre il complotto per uccidere Giulio Cesare. Devi decidere: avvertire Cesare, rimanere in silenzio, o avvertire i veterani. **3 finali multipli** basati sulle tue scelte.
+- **Didattica:**
+  - Storia romana (personaggi reali: Bruto, Cassio, Calpurnia)
+  - Cultura romana (domus, Foro, terme, oggetti d'epoca)
+  - Puzzle storici (cifra di Cesare)
+  - Dilemmi morali e scelte con conseguenze
+  - Riferimenti storici accurati per scopo educativo
 
 ### Generi Consigliati
 - 🕵️ **Giallo/Investigativo:** Risolvere un mistero
