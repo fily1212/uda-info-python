@@ -33,7 +33,7 @@ Questa **Unità Didattica di Apprendimento (UDA)** interdisciplinare combina lo 
 
 ## Struttura degli Esercizi
 
-Il percorso didattico è strutturato in **5 esercizi progressivi** che aumentano gradualmente in complessità:
+Il percorso didattico è strutturato in **10 esercizi progressivi** che aumentano gradualmente in complessità:
 
 ### 📊 Esercizio 1: Analizzatore di Testo
 **Livello:** BASE
@@ -92,6 +92,66 @@ Crea un'applicazione web interattiva che propone un quiz sulla letteratura itali
 Sviluppa un programma che genera automaticamente racconti brevi combinando elementi narrativi casuali mantenendo coerenza.
 
 📁 [Vai all'esercizio 5](./es5-generatore-racconti/)
+
+---
+
+### 🤖 Esercizio 6: Generatore di Racconti con AI
+**Livello:** AVANZATO
+**Durata stimata:** 5-7 ore
+**Concetti Python:** API calls, integrazione servizi esterni, gestione chiavi, async/await
+**Concetti Italiano:** generazione creativa assistita, storytelling, prompt engineering
+
+Potenzia il generatore di racconti integrando un modello di linguaggio AI per creare storie più elaborate e coerenti.
+
+📁 [Vai all'esercizio 6](./es6-generatore-racconti-ai/)
+
+---
+
+### 📈 Esercizio 7: Analizzatore di Frequenze
+**Livello:** INTERMEDIO
+**Durata stimata:** 3-4 ore
+**Concetti Python:** analisi statistica, grafici, elaborazione testi, dizionari
+**Concetti Italiano:** analisi lessicale, frequenza parole, vocabolario
+
+Crea un programma che analizza la frequenza di parole e caratteri in testi letterari, con visualizzazione grafica dei risultati.
+
+📁 [Vai all'esercizio 7](./es7-analizzatore-frequenze/)
+
+---
+
+### 🔤 Esercizio 8: Generatore di Acrostici
+**Livello:** INTERMEDIO
+**Durata stimata:** 3-4 ore
+**Concetti Python:** algoritmi di ricerca, dizionari, pattern matching, creatività computazionale
+**Concetti Italiano:** acrostici, poesia, creatività letteraria
+
+Sviluppa un programma che genera acrostici: poesie dove le prime lettere di ogni verso formano una parola o frase.
+
+📁 [Vai all'esercizio 8](./es8-generatore-acrostici/)
+
+---
+
+### 💬 Esercizio 9: Bot Telegram Citazioni Letterarie
+**Livello:** AVANZATO
+**Durata stimata:** 5-6 ore
+**Concetti Python:** bot development, Telegram API, gestione comandi, database
+**Concetti Italiano:** citazioni letterarie, autori italiani, opere classiche
+
+Crea un bot Telegram che invia citazioni letterarie casuali, cerca citazioni per autore/opera, e permette agli utenti di salvare le loro preferite.
+
+📁 [Vai all'esercizio 9](./es9-bot-telegram-citazioni/)
+
+---
+
+### 📝 Esercizio 10: Blog Letterario con Flask
+**Livello:** AVANZATO
+**Durata stimata:** 6-8 ore
+**Concetti Python:** Flask avanzato, database, autenticazione, CRUD, templating
+**Concetti Italiano:** recensioni letterarie, blog, critica letteraria
+
+Costruisci un'applicazione web completa per un blog letterario con articoli, commenti, categorie, ricerca e gestione utenti.
+
+📁 [Vai all'esercizio 10](./es10-blog-letterario-flask/)
 
 ---
 
@@ -156,9 +216,29 @@ esN-nome-esercizio/
 - Introduzione allo sviluppo web
 - Ripasso letteratura italiana
 
-**Settimana 10-12:** Esercizio 5 (Generatore di Racconti)
-- Progetto finale complesso
+**Settimana 10-11:** Esercizio 5 (Generatore di Racconti)
 - Creatività narrativa e algoritmica
+- Strutture dati complesse
+
+**Settimana 12-13:** Esercizio 6 (Generatore Racconti AI)
+- Integrazione API esterne
+- Prompt engineering
+
+**Settimana 14-15:** Esercizio 7 (Analizzatore Frequenze)
+- Analisi statistica testuale
+- Visualizzazione dati
+
+**Settimana 16-17:** Esercizio 8 (Generatore Acrostici)
+- Algoritmi creativi
+- Pattern matching avanzato
+
+**Settimana 18-19:** Esercizio 9 (Bot Telegram)
+- Bot development
+- API Telegram
+
+**Settimana 20-22:** Esercizio 10 (Blog Flask)
+- Progetto finale complesso
+- Web development avanzato
 
 ### Per i Docenti
 
@@ -215,7 +295,7 @@ Una volta completati tutti gli esercizi, gli studenti possono:
 ## FAQ
 
 ### Quanto tempo serve per completare tutti gli esercizi?
-Circa 20-25 ore totali, distribuite su 10-12 settimane.
+Circa 40-50 ore totali, distribuite su 20-22 settimane.
 
 ### Posso modificare gli esercizi?
 Assolutamente sì! Incoraggiamo la personalizzazione e la creatività.
