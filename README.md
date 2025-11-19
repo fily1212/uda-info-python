@@ -15,6 +15,9 @@ Questo repository contiene materiale didattico ed esercizi di programmazione Pyt
 
 ## Struttura del Repository
 
+### 📁 [Esercizi di Informatica - OOP](./esercizi-info/)
+**Programmazione Orientata agli Oggetti** (15 esercizi): classi, ereditarietà, polimorfismo, metodi speciali, composizione, classi astratte, progetto finale gestionale.
+
 ### 📁 [Esercizi di Fisica](./esercizi-fisica/)
 Simulazioni e visualizzazioni di fenomeni fisici (8 esercizi): cinematica, pendolo, circuiti, moto planetario, onde, ecc.
 
@@ -47,14 +50,15 @@ Progetto completo: creare avventure testuali con parser di linguaggio naturale, 
 6. Confronta il tuo lavoro con la `soluzione/` (solo dopo aver provato!)
 
 ## Durata Stimata
+- **Esercizi Informatica (OOP):** 80 ore
 - **Esercizi Fisica:** 25-30 ore
 - **Esercizi Matematica:** 25-30 ore
-- **Esercizi Italiano:** 20-25 ore
+- **Esercizi Italiano:** 40-50 ore
 - **Esercizi TLC:** 30-35 ore
 - **Esercizi Videogiochi:** 45-60 ore
 - **UDA Avventura Testuale:** 75 ore
 
-**Totale:** ~220-255 ore (ideale per un anno scolastico completo)
+**Totale:** ~320-355 ore (ideale per un anno scolastico completo)
 
 ## Licenza
 Materiale didattico ad uso libero per scopi educativi.
