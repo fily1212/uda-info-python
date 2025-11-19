@@ -1,0 +1,127 @@
+{
+  "titolo": "La Foresta Incantata",
+  "autore": "Esempio",
+  "descrizione": "Un'avventura fantasy nella foresta magica",
+  "scena_iniziale": "risveglio",
+  "scene": {
+    "risveglio": {
+      "testo": "Ti svegli in una radura nella foresta. Il sole filtra tra gli alberi secolari. Senti il canto degli uccelli e il fruscio delle foglie. Davanti a te si biforca un sentiero: uno va a sinistra verso una luce dorata, l'altro a destra verso un'ombra misteriosa.",
+      "scelte": [
+        {
+          "testo": "Segui il sentiero verso la luce dorata",
+          "prossima_scena": "ruscello"
+        },
+        {
+          "testo": "Segui il sentiero verso l'ombra misteriosa",
+          "prossima_scena": "grotta"
+        },
+        {
+          "testo": "Rimani nella radura a esplorare",
+          "prossima_scena": "radura"
+        }
+      ]
+    },
+    "ruscello": {
+      "testo": "Segui la luce e arrivi a un ruscello cristallino. L'acqua scorre dolcemente tra le rocce. Sull'altra sponda vedi una creatura fatata che ti osserva incuriosita. 'Benvenuto, viaggiatore,' dice con voce melodiosa. 'Sono la custode di queste acque. Se desideri attraversare, dovrai rispondere a un enigma.'",
+      "scelte": [
+        {
+          "testo": "Accetta la sfida dell'enigma",
+          "prossima_scena": "enigma_fata"
+        },
+        {
+          "testo": "Ringrazia e torna indietro",
+          "prossima_scena": "risveglio"
+        },
+        {
+          "testo": "Cerca un altro modo per attraversare",
+          "prossima_scena": "guado"
+        }
+      ]
+    },
+    "grotta": {
+      "testo": "Il sentiero oscuro ti conduce all'imboccatura di una grotta. L'aria è fredda e umida. Senti un rumore provenire dall'interno... è un respiro lento e profondo. Potrebbe essere pericoloso.",
+      "scelte": [
+        {
+          "testo": "Entra coraggiosamente nella grotta",
+          "prossima_scena": "drago"
+        },
+        {
+          "testo": "Torna indietro verso la radura",
+          "prossima_scena": "risveglio"
+        },
+        {
+          "testo": "Raccogli un ramo per fare una torcia",
+          "prossima_scena": "grotta_con_luce"
+        }
+      ]
+    },
+    "radura": {
+      "testo": "Esplori la radura con attenzione. Tra l'erba alta trovi un vecchio bastone di legno intarsiato con simboli magici. Potrebbe tornarti utile! Senti anche delle voci provenire da nord.",
+      "scelte": [
+        {
+          "testo": "Prendi il bastone magico e vai verso le voci",
+          "prossima_scena": "villaggio"
+        },
+        {
+          "testo": "Lascia il bastone e torna ai sentieri",
+          "prossima_scena": "risveglio"
+        }
+      ]
+    },
+    "enigma_fata": {
+      "testo": "La fata sorride. 'Ascolta bene: Sono leggera come una piuma, ma anche l'uomo più forte non può tenermi a lungo. Cosa sono?' Pensi alla risposta...",
+      "scelte": [
+        {
+          "testo": "Il respiro!",
+          "prossima_scena": "attraversamento"
+        },
+        {
+          "testo": "Una nuvola?",
+          "prossima_scena": "risposta_sbagliata"
+        },
+        {
+          "testo": "Mi arrendo, non lo so",
+          "prossima_scena": "risposta_sbagliata"
+        }
+      ]
+    },
+    "attraversamento": {
+      "testo": "'Corretto!' esclama la fata, sorpresa. 'Sei più saggio di quanto pensassi. Puoi attraversare.' L'acqua del ruscello si divide, formando un sentiero asciutto. Attraversi e dall'altra parte trovi un portale luminoso che ti conduce a un regno magico. Congratulazioni, hai superato la prova!",
+      "tipo": "finale",
+      "finale_tipo": "buono"
+    },
+    "risposta_sbagliata": {
+      "testo": "La fata scuote il capo. 'Mi dispiace, non è la risposta giusta. Torna quando sarai più saggio.' Ti ritrovi di nuovo nella radura iniziale, come se il tempo fosse tornato indietro.",
+      "scelte": [
+        {
+          "testo": "Riprova dall'inizio",
+          "prossima_scena": "risveglio"
+        }
+      ]
+    },
+    "guado": {
+      "testo": "Cerchi un punto meno profondo del ruscello. Dopo aver camminato per un po' trovi alcune pietre che formano un guado naturale. Attraversi con attenzione, ma scivoli e cadi in acqua! Quando ti rialzi, sei bagnato ma dall'altra parte. Prosegui nel bosco fino a trovare un villaggio.",
+      "scelte": [
+        {
+          "testo": "Vai verso il villaggio",
+          "prossima_scena": "villaggio"
+        }
+      ]
+    },
+    "drago": {
+      "testo": "Entri nella grotta al buio. Improvvisamente due occhi rossi si aprono davanti a te! È un drago! 'Chi osa disturbare il mio sonno?' tuona la creatura. Non avendo una torcia, non riesci a vedere bene e inciampi. Il drago ti cattura. Game Over.",
+      "tipo": "finale",
+      "finale_tipo": "cattivo"
+    },
+    "grotta_con_luce": {
+      "testo": "Accendi una torcia improvvisata e entri nella grotta. La luce rivela che il 'drago' è in realtà un anziano eremita che russa sonoramente! Ride quando lo svegli. 'Ah, scusa! Molti mi scambiano per un drago. Entra, ragazzo, ti offrirò del tè.' Passi una piacevole serata ascoltando le sue storie.",
+      "tipo": "finale",
+      "finale_tipo": "buono"
+    },
+    "villaggio": {
+      "testo": "Arrivi a un piccolo villaggio nascosto nella foresta. Gli abitanti ti accolgono calorosamente. Il capo villaggio ti offre cibo e un posto dove dormire. 'Resta con noi, viaggiatore. Questa foresta è pericolosa di notte.' Accetti l'ospitalità e ti senti finalmente al sicuro.",
+      "tipo": "finale",
+      "finale_tipo": "buono"
+    }
+  }
+}
