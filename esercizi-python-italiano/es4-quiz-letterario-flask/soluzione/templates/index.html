@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Letteratura Italiana</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-box">
+            <h1>📚 Quiz Letteratura Italiana</h1>
+
+            <div class="intro">
+                <p>Testa le tue conoscenze sulla letteratura italiana!</p>
+
+                <div class="info-box">
+                    <h3>ℹ️ Informazioni</h3>
+                    <ul>
+                        <li>🎯 <strong>12 domande</strong> a scelta multipla</li>
+                        <li>⭐ <strong>1 punto</strong> per ogni risposta corretta</li>
+                        <li>📖 Argomenti: autori, opere, citazioni e periodi letterari</li>
+                        <li>⏱️ Nessun limite di tempo</li>
+                    </ul>
+                </div>
+
+                <a href="{{ url_for('inizia') }}" class="btn btn-primary">
+                    🚀 Inizia il Quiz
+                </a>
+            </div>
+
+            <footer>
+                <p>Un progetto UDA - Italiano e Informatica</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

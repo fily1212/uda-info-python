@@ -1,0 +1,298 @@
+/* Style CSS per Quiz Letterario */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+.quiz-box {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.intro {
+    text-align: center;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.info-box {
+    background: #f8f9fa;
+    border-left: 4px solid #667eea;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 8px;
+}
+
+.info-box h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box li {
+    padding: 8px 0;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+}
+
+/* Question */
+.question-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.question-number {
+    background: #667eea;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.question {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Options */
+.options {
+    margin: 30px 0;
+}
+
+.option {
+    display: block;
+    background: #f8f9fa;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    background: #e9ecef;
+    border-color: #667eea;
+    transform: translateX(5px);
+}
+
+.option input[type="radio"] {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.option-text {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Results */
+.score-box {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.score-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+}
+
+.score {
+    color: white;
+    font-size: 3em;
+    margin: 0;
+}
+
+.percentage {
+    color: white;
+    font-size: 1.5em;
+    margin: 5px 0 0 0;
+}
+
+.message {
+    font-size: 1.3em;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Answer Review */
+.review {
+    margin: 40px 0;
+}
+
+.review h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.answer-review {
+    background: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border-left: 4px solid #ccc;
+}
+
+.answer-review.correct {
+    border-left-color: #28a745;
+}
+
+.answer-review.incorrect {
+    border-left-color: #dc3545;
+}
+
+.answer-review h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.user-answer {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.correct-answer {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #28a745;
+}
+
+.explanation {
+    margin: 15px 0 0 0;
+    padding: 15px;
+    background: #fff3cd;
+    border-radius: 8px;
+    color: #856404;
+    font-style: italic;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .quiz-box {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .question {
+        font-size: 1.2em;
+    }
+
+    .score-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .score {
+        font-size: 2em;
+    }
+}

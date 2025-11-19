@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Domanda {{ numero_domanda }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-box">
+            <div class="progress-bar">
+                <div class="progress" style="width: {{ (numero_domanda / totale_domande * 100) }}%"></div>
+            </div>
+
+            <div class="question-header">
+                <span class="question-number">Domanda {{ numero_domanda }}/{{ totale_domande }}</span>
+            </div>
+
+            <h2 class="question">{{ domanda.domanda }}</h2>
+
+            <form method="POST" action="{{ url_for('verifica') }}">
+                <div class="options">
+                    {% for opzione in domanda.opzioni %}
+                    <label class="option">
+                        <input type="radio" name="risposta" value="{{ opzione }}" required>
+                        <span class="option-text">{{ opzione }}</span>
+                    </label>
+                    {% endfor %}
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    {% if numero_domanda == totale_domande %}
+                        ✅ Completa Quiz
+                    {% else %}
+                        ➡️ Prossima Domanda
+                    {% endif %}
+                </button>
+            </form>
+
+            <a href="{{ url_for('reset') }}" class="btn btn-secondary">
+                🔄 Ricomincia
+            </a>
+        </div>
+    </div>
+</body>
+</html>

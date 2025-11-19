@@ -1,0 +1,17 @@
+=== TESTI DI ESEMPIO PER TESTARE L'ANALIZZATORE ===
+
+--- TEST 1: Frase breve ---
+La vita è bella.
+
+--- TEST 2: Paragrafo ---
+La letteratura italiana è ricca di capolavori che hanno influenzato la cultura mondiale. Da Dante Alighieri a Italo Calvino, gli autori italiani hanno esplorato temi universali con stile unico. Ogni opera ci insegna qualcosa di nuovo!
+
+--- TEST 3: Poesia (Giuseppe Ungaretti - Mattina) ---
+M'illumino
+d'immenso
+
+--- TEST 4: Citazione ---
+Nel mezzo del cammin di nostra vita mi ritrovai per una selva oscura, ché la diritta via era smarrita.
+
+--- TEST 5: Testo misto con punteggiatura ---
+Che cos'è la poesia? È l'arte delle parole! Ogni verso racconta emozioni, pensieri, sogni. La poesia vive nel cuore dell'uomo.
