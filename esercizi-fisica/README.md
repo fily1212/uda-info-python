@@ -21,8 +21,17 @@ Simulazione gravitazionale, orbite, leggi di Keplero, n-body.
 ### 🌊 Es5: Onde e Interferenza (AVANZATO)
 Simulazione onde, interferenza, diffrazione, fenomeni ondulatori.
 
+### 📏 Es6: Calcolatore Cinematica (FACILE)
+Formule cinematica base: moto uniforme, accelerato, caduta libera, grafici.
+
+### ⚙️ Es7: Leggi della Dinamica (FACILE)
+Seconda legge Newton, peso, attrito, piano inclinato, applicazioni pratiche.
+
+### 🔄 Es8: Convertitore Unità (FACILE)
+Conversione unità di misura: lunghezza, massa, velocità, temperatura.
+
 ---
 
 **Prerequisiti:** Python 3.8+, fisica del liceo
 
-**Durata totale:** 20-25 ore
+**Durata totale:** 25-30 ore
