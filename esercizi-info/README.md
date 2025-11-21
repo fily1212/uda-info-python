@@ -10,7 +10,7 @@
 
 ## Descrizione del Percorso
 
-Questa **Unità Didattica di Apprendimento (UDA)** introduce la **Programmazione Orientata agli Oggetti (OOP)** in Python attraverso 15 esercizi progressivi. Gli studenti partono dall'utilizzo di classi già esistenti fino ad arrivare a progettare sistemi completi con classi, ereditarietà, polimorfismo e composizione.
+Questa **Unità Didattica di Apprendimento (UDA)** introduce la **Programmazione Orientata agli Oggetti (OOP)** in Python attraverso **20 esercizi progressivi**. Gli studenti partono dall'utilizzo di classi già esistenti (datetime, matplotlib, numpy, pandas, pathlib) per poi creare classi personalizzate e arrivare a progettare sistemi completi con ereditarietà, polimorfismo e composizione.
 
 ### Prerequisiti
 
@@ -37,11 +37,11 @@ Al termine del percorso, gli studenti sapranno:
 
 ## Struttura degli Esercizi
 
-### 🟢 **LIVELLO BASE** - Fondamenti (Es. 1-5)
+### 🟢 **LIVELLO BASE** - Uso di Classi Esistenti (Es. 1-6)
 
-Introduzione alle classi e creazione di prime classi semplici.
+Familiarizzazione con l'approccio OOP usando classi fornite da librerie popolari Python.
 
-#### 📦 Es1: Usare Classi Esistenti
+#### 📦 Es1: Usare Classi Esistenti - Standard Library
 **Livello:** FACILE | **Durata:** 2-3 ore
 
 Impara a usare classi già pronte dalle librerie Python standard (datetime, collections, random).
@@ -50,143 +50,192 @@ Impara a usare classi già pronte dalle librerie Python standard (datetime, coll
 
 ---
 
-#### 👤 Es2: Prima Classe - Persona
+#### 📊 Es2: Matplotlib - Creare Grafici con OOP
+**Livello:** FACILE | **Durata:** 3-4 ore
+
+Usa le classi Figure e Axes di matplotlib per creare visualizzazioni dati.
+
+📁 [Vai all'esercizio 2](./es02-matplotlib-grafici/)
+
+---
+
+#### 🔢 Es3: NumPy - Array Multidimensionali
+**Livello:** FACILE | **Durata:** 3-4 ore
+
+Lavora con la classe ndarray di NumPy per calcoli vettoriali efficienti.
+
+📁 [Vai all'esercizio 3](./es03-numpy-array/)
+
+---
+
+#### 📈 Es4: Pandas - DataFrame per Analisi Dati
+**Livello:** BASE | **Durata:** 4-5 ore
+
+Manipola dati tabulari con le classi DataFrame e Series di pandas.
+
+📁 [Vai all'esercizio 4](./es04-pandas-dataframe/)
+
+---
+
+#### 📅 Es5: Datetime Avanzato - Date come Oggetti
+**Livello:** BASE | **Durata:** 3-4 ore
+
+Gestione avanzata di date e tempi con le classi datetime, timedelta e date.
+
+📁 [Vai all'esercizio 5](./es05-datetime-avanzato/)
+
+---
+
+#### 📁 Es16: Pathlib - File System come Oggetti
+**Livello:** BASE | **Durata:** 3-4 ore
+
+Naviga e manipola il file system con l'approccio OOP usando la classe Path.
+
+📁 [Vai all'esercizio 16](./es16-pathlib-files/)
+
+---
+
+### 🟡 **LIVELLO BASE** - Creazione Classi Proprie (Es. 7-10)
+
+Dopo aver usato classi esistenti, impara a creare le tue classi personalizzate.
+
+#### 👤 Es17: Prima Classe - Persona
 **Livello:** FACILE | **Durata:** 3-4 ore
 
 Crea la tua prima classe: una classe `Persona` con nome, età e metodi base.
 
-📁 [Vai all'esercizio 2](./es02-prima-classe-persona/)
+📁 [Vai all'esercizio 17](./es17-prima-classe-persona/)
 
 ---
 
-#### 🔢 Es3: Classe con Metodi - Contatore
+#### 🔢 Es18: Classe con Metodi - Contatore
 **Livello:** BASE | **Durata:** 3-4 ore
 
 Implementa una classe `Contatore` con metodi per incrementare, decrementare e resettare.
 
-📁 [Vai all'esercizio 3](./es03-classe-con-metodi/)
+📁 [Vai all'esercizio 18](./es18-classe-con-metodi/)
 
 ---
 
-#### 🏦 Es4: Attributi di Classe vs Istanza
+#### 🏦 Es19: Attributi di Classe vs Istanza
 **Livello:** BASE | **Durata:** 4-5 ore
 
 Comprendi la differenza tra attributi di classe e di istanza con una classe `ContoCorrente`.
 
-📁 [Vai all'esercizio 4](./es04-attributi-classe-istanza/)
+📁 [Vai all'esercizio 19](./es19-attributi-classe-istanza/)
 
 ---
 
-#### 📐 Es5: Getter e Setter - Rettangolo
+#### 📐 Es20: Getter e Setter - Rettangolo
 **Livello:** BASE | **Durata:** 3-4 ore
 
 Implementa getter, setter e metodi di calcolo in una classe `Rettangolo`.
 
-📁 [Vai all'esercizio 5](./es05-getter-setter/)
+📁 [Vai all'esercizio 20](./es20-getter-setter/)
 
 ---
 
-### 🟡 **LIVELLO INTERMEDIO** - Ereditarietà e Polimorfismo (Es. 6-10)
+### 🟡 **LIVELLO INTERMEDIO** - Ereditarietà e Polimorfismo (Es. 16-20)
 
 Approfondimento su ereditarietà, override di metodi e composizione.
 
-#### 🐕 Es6: Ereditarietà Base - Animali
+#### 🐕 Es16: Ereditarietà Base - Animali
 **Livello:** INTERMEDIO | **Durata:** 4-5 ore
 
 Crea una gerarchia di classi: `Animale` → `Cane`, `Gatto`, `Uccello`.
 
-📁 [Vai all'esercizio 6](./es06-ereditarieta-animali/)
+📁 [Vai all'esercizio 16](./es16-ereditarieta-animali/)
 
 ---
 
-#### 🚗 Es7: Override di Metodi - Veicoli
+#### 🚗 Es17: Override di Metodi - Veicoli
 **Livello:** INTERMEDIO | **Durata:** 4-5 ore
 
 Implementa override di metodi con classi `Veicolo` → `Auto`, `Moto`, `Bicicletta`.
 
-📁 [Vai all'esercizio 7](./es07-override-veicoli/)
+📁 [Vai all'esercizio 17](./es17-override-veicoli/)
 
 ---
 
-#### 🏭 Es8: Metodi di Classe e Statici
+#### 🏭 Es18: Metodi di Classe e Statici
 **Livello:** INTERMEDIO | **Durata:** 5-6 ore
 
 Comprendi `@classmethod` e `@staticmethod` con una classe `Prodotto`.
 
-📁 [Vai all'esercizio 8](./es08-metodi-classe-statici/)
+📁 [Vai all'esercizio 18](./es18-metodi-classe-statici/)
 
 ---
 
-#### 📚 Es9: Composizione - Biblioteca
+#### 📚 Es19: Composizione - Biblioteca
 **Livello:** INTERMEDIO | **Durata:** 5-6 ore
 
 Implementa la composizione: una `Biblioteca` contiene molti `Libro`.
 
-📁 [Vai all'esercizio 9](./es09-composizione-biblioteca/)
+📁 [Vai all'esercizio 19](./es19-composizione-biblioteca/)
 
 ---
 
-#### 📍 Es10: Metodi Speciali (__str__, __repr__)
+#### 📍 Es20: Metodi Speciali (__str__, __repr__)
 **Livello:** INTERMEDIO | **Durata:** 4-5 ore
 
 Usa metodi speciali (dunder methods) con una classe `Punto2D`.
 
-📁 [Vai all'esercizio 10](./es10-metodi-speciali/)
+📁 [Vai all'esercizio 20](./es20-metodi-speciali/)
 
 ---
 
-### 🔴 **LIVELLO AVANZATO** - Concetti Avanzati OOP (Es. 11-15)
+### 🔴 **LIVELLO AVANZATO** - Concetti Avanzati OOP (Es. 16-20)
 
 Tecniche avanzate: overloading operatori, property, classi astratte.
 
-#### ➗ Es11: Overloading Operatori - Frazione
+#### ➗ Es16: Overloading Operatori - Frazione
 **Livello:** AVANZATO | **Durata:** 6-7 ore
 
 Implementa operatori matematici (+, -, *, /) per una classe `Frazione`.
 
-📁 [Vai all'esercizio 11](./es11-overloading-operatori/)
+📁 [Vai all'esercizio 16](./es16-overloading-operatori/)
 
 ---
 
-#### 🌡️ Es12: Property Decorator - Temperatura
+#### 🌡️ Es17: Property Decorator - Temperatura
 **Livello:** AVANZATO | **Durata:** 5-6 ore
 
 Usa `@property` per gestire conversioni automatiche (Celsius ↔ Fahrenheit).
 
-📁 [Vai all'esercizio 12](./es12-property-decorator/)
+📁 [Vai all'esercizio 17](./es17-property-decorator/)
 
 ---
 
-#### 🔌 Es13: Ereditarietà Multipla - Elettrodomestici
+#### 🔌 Es18: Ereditarietà Multipla - Elettrodomestici
 **Livello:** AVANZATO | **Durata:** 6-7 ore
 
 Esplora l'ereditarietà multipla e i mix-in con elettrodomestici smart.
 
-📁 [Vai all'esercizio 13](./es13-ereditarieta-multipla/)
+📁 [Vai all'esercizio 18](./es18-ereditarieta-multipla/)
 
 ---
 
-#### 🔷 Es14: Classi Astratte - Forme Geometriche
+#### 🔷 Es19: Classi Astratte - Forme Geometriche
 **Livello:** AVANZATO | **Durata:** 6-7 ore
 
 Usa `ABC` (Abstract Base Class) per creare una gerarchia di forme geometriche.
 
-📁 [Vai all'esercizio 14](./es14-classi-astratte/)
+📁 [Vai all'esercizio 19](./es19-classi-astratte/)
 
 ---
 
-#### 🎓 Es15: Progetto Finale - Sistema Gestionale Scuola
+#### 🎓 Es20: Progetto Finale - Sistema Gestionale Scuola
 **Livello:** AVANZATO | **Durata:** 10-12 ore
 
 Progetto completo: sistema per gestire studenti, docenti, corsi, voti.
 
-📁 [Vai all'esercizio 15](./es15-progetto-gestionale/)
+📁 [Vai all'esercizio 20](./es20-progetto-gestionale/)
 
 ---
 
 ## Pianificazione Temporale
 
-### Percorso Consigliato (22 settimane)
+### Percorso Consigliato (28 settimane)
 
 | Settimana | Esercizi | Argomento | Ore |
 |-----------|----------|-----------|-----|
@@ -200,7 +249,7 @@ Progetto completo: sistema per gestire studenti, docenti, corsi, voti.
 | 15-17 | Es14 | Classi astratte | 7 |
 | 18-22 | Es15 | Progetto finale | 12 |
 
-**Durata totale:** ~80 ore (ideale per un anno scolastico)
+**Durata totale:** ~100 ore (ideale per un anno scolastico)
 
 ---
 
@@ -406,7 +455,7 @@ class Esempio:
 
 ## Progetti Extra (Opzionali)
 
-Dopo aver completato i 15 esercizi, prova questi progetti:
+Dopo aver completato i 20 esercizi, prova questi progetti:
 
 1. **Sistema di E-commerce**: Prodotti, Carrello, Ordini, Utenti
 2. **Gioco RPG**: Personaggi, Nemici, Inventario, Combattimento
